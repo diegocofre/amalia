@@ -7,3 +7,5 @@ Los reportes de corpus enlazan corrida, fuente y snapshot/manifiesto. Conservar 
 - [M00-feasibility-20261119T031736Z](M00-feasibility-20261119T031736Z.json): primera corrida local, extracción compacta de consola revisada; 3/3 tests, modelos y metadatos, sin datos textuales admitidos.
 
 - [SEDICI piloto 001 — 2026-11-19](sedici-pilot-001-20261119.json): dos corridas locales, 8/8 pruebas, hashes y tokenización repetidos, tres candidatos, cero admitidos; extracción estructurada del log revisado, sin textos.
+
+- [SEDICI reextracción — 2026-11-19](sedici-pilot-20261119T034011501415Z.json): 10/10 pruebas, fonttools fijado, cero advertencias; comparación exacta de hashes y métricas con la línea de base. Extracción estructurada del log, cero documentos admitidos.
