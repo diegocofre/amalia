@@ -1,14 +1,22 @@
-# Amalia
+<h1 align="center">
+  <img src="assets/amalia-logo.webp" alt="Amalia" width="472">
+</h1>
 
-**El futuro también tiene memoria.**
+<h2 align="center">El futuro también tiene memoria.</h2>
 
-Proyecto argentino de inteligencia artificial abierta.
+<p align="center">Proyecto argentino de inteligencia artificial abierta.</p>
+
+<p align="center"><a href="docs/technical-design.md">Explorá el proyecto</a> · <a href="docs/sponsorship.md"><strong>Patrocinio institucional</strong></a> · <a href="CONTRIBUTING.md">Sumate</a> · <a href="README.en.md">English</a></p>
+
+---
 
 > Lo que vieron mis ojos fue simultáneo: lo que transcribiré, sucesivo, porque el lenguaje lo es.
 >
 > — Jorge Luis Borges, *El Aleph*. [Fuente](https://www.iar.unlp.edu.ar/index.php/2022/06/28/fragmento-de-el-aleph/)
 
-[Visión](#qué-es-amalia) · [Cómo lo vamos a construir](#cómo-empezamos) · [Documentación](#documentación) · [Participá](#participá) · [English](README.en.md)
+[Visión](#qué-es-amalia) · [Investigación](#nuestra-pregunta-fundacional) · [Tecnología](#cómo-empezamos) · [Amalia Federal](#una-construcción-colectiva-y-federal) · [Patrocinio](#construyamos-amalia-juntos) · [Documentación](#documentación)
+
+**Estado del proyecto:** etapa fundacional · investigación abierta · primera versión experimental en planificación.
 
 ## ¿Qué conocimiento le estamos dejando al futuro?
 
@@ -20,11 +28,17 @@ Hoy, los modelos de lenguaje inauguran otra forma de representar y producir sent
 
 Amalia nace de esa inquietud.
 
+Queremos que las voces de nuestra sociedad participen de la formación de las inteligencias artificiales del futuro. Y queremos que esa tecnología pueda ser estudiada, utilizada y desarrollada desde cualquier lugar del mundo.
+
 ## Qué es Amalia
 
 Amalia es una iniciativa argentina de investigación abierta que busca construir una familia de modelos de lenguaje enriquecidos con el patrimonio cultural, científico, lingüístico e intelectual de nuestra sociedad, en diálogo con el conocimiento universal.
 
 Queremos investigar cómo nuestra literatura, historia, ciencia, formas de comunicarnos y experiencias colectivas pueden modificar las representaciones aprendidas por un modelo. Queremos hacerlo de manera federal, participativa y científicamente rigurosa.
+
+| Ciencia | Tecnología | Cultura y sociedad |
+| :--- | :--- | :--- |
+| Investigar cómo los datos culturales modifican los modelos de lenguaje. | Construir modelos abiertos, reproducibles y progresivamente más capaces. | Recuperar patrimonio y convocar a las comunidades de todo el país. |
 
 ### Nuestra pregunta fundacional
 
@@ -80,6 +94,23 @@ El [diseño técnico](docs/technical-design.md) explica los componentes, datos, 
 
 La meta inicial es una V1 experimental pública, con pesos, corpus redistribuible, código, evaluación y una primera convocatoria de contribuciones. A largo plazo aspiramos a participar de la investigación de modelos de frontera, con nuevas arquitecturas, colaboración científica y recursos adecuados. No es una promesa de desempeño ni una fecha de entrega.
 
+## Construyamos Amalia juntos
+
+Buscamos un **patrocinador fundador** y aliados académicos, culturales y tecnológicos que quieran acompañar una iniciativa argentina de investigación abierta desde sus primeros pasos.
+
+| Cómo acompañar | Qué hace posible |
+|---|---|
+| Infraestructura y cómputo | Entrenar y evaluar los primeros modelos. |
+| Financiamiento | Sostener la investigación, el desarrollo y la curaduría documental. |
+| Colaboración científica | Diseñar experimentos, revisar resultados y sumar conocimiento interdisciplinario. |
+| Vinculación cultural y territorial | Recuperar patrimonio documental y ampliar la participación federal. |
+
+El primer hito es un laboratorio reproducible de pequeña escala. El siguiente, una V1 pública con pesos, código, datos redistribuibles y resultados verificables. Queremos crecer con evidencia y preservar la independencia científica, sin exclusividad sobre los resultados.
+
+**[Conocé nuestra propuesta institucional y de patrocinio →](docs/sponsorship.md)**
+
+¿Representás a una institución interesada? [Abrí una conversación en GitHub](https://github.com/diegocofre/amalia/issues/new). No publiques información confidencial ni datos de contacto privados allí.
+
 ## Participá
 
 Buscamos colaboradores y patrocinadores institucionales que quieran acompañar el nacimiento de Amalia sin exclusividad sobre sus resultados. Las contribuciones podrán ser documentales, científicas, técnicas, culturales o de infraestructura y financiamiento.
@@ -112,4 +143,4 @@ El software original se distribuye bajo [Apache-2.0](LICENSE), la documentación
 
 ---
 
-**Amalia — El futuro también tiene memoria.**
+<p align="center"><strong>Amalia · El futuro también tiene memoria.</strong></p>
