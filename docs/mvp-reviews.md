@@ -45,3 +45,7 @@ Esta pasada no constituye auditoría exhaustiva ni aprobación de candidato o da
 ## Metodología y probe ampliado
 
 R14: ampliado script para metadatos Hub, encabezados Safetensors y endpoints alternativos; declara commit/hash y errores. Añadidas pruebas unitarias y dependencia directa fijada. Pendiente ejecución local, no cerrar hallazgo. Se establece [metodología de investigación reproducible](research-methodology.md) para humanos y agentes; versionar cada paso y evidencia revisada.
+
+## Metodología de laboratorio ejecutable
+
+R15 (importante, abierto): el probe actual no produce corpus. Se definió el contrato de adquisición incremental, datos locales, reporte y snapshot, así como metodología cuantitativa/cualitativa y bibliografía. Cierre de implementación: primer adaptador autorizado con lote real local, linaje, reporte, pruebas de idempotencia, reanudación, exclusión y reproducción; no cerrar por existencia de documentación. Se mantiene gate de derechos R05 y ejecución pendiente R14. La decisión tecnológica de orquestación queda condicionada a necesidad medida.

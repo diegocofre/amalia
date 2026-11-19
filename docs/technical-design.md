@@ -182,3 +182,7 @@ Criterio F01: el circuito funciona y puede ser reproducido. Un resultado nulo no
 Estas referencias orientan la investigación, no certifican derechos ni establecen versiones aprobadas.
 
 Volver al [roadmap](../ROADMAP.md) o a la [agenda científica](research.md).
+
+## Operación local de investigación
+
+La [metodología del laboratorio ejecutable](research-methodology.md) complementa este diseño: cada fuente elegible puede aportar mediante un adaptador reproducible lotes incrementales locales, con etapas explícitas de descubrimiento, adquisición, curaduría, admisión, reporte y snapshot. El catálogo y las métricas sirven al diseño científico iterativo, no a un ciclo autónomo que altere el experimento confirmatorio. Priorizar CLI Python y almacenamiento local simple; orquestación y sincronización avanzadas quedan condicionadas al volumen/necesidad.

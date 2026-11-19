@@ -82,3 +82,7 @@ La selección conserva dos finalistas provisionales. Salamandra 2B y SmolLM3 3B 
 ## Evidencia M00 adicional
 
 [Factibilidad](feasibility.md) registra configuración de finalistas, muestra documental y prueba local acotada propuesta. No cambia la condición de borrador 0.2; el plan 0.3 requiere resultados empíricos y/o revisión crítica explícita de los gates pendientes. No hay autorización de entrenamiento.
+
+## Laboratorio ejecutable y adquisición acumulativa
+
+El MVP adopta la [metodología de compendio de investigación ejecutable](research-methodology.md). M00 conserva el probe de solo lectura como descubrimiento; M02/M03 deben producir un corpus real local, elegible y persistente por lotes, con catálogo, linaje y reportes generados. Antes de ampliar nuevas fuentes, validar un adaptador piloto con límites, reanudación, idempotencia, admisión y snapshot. Los datos de prueba se separan de entrenamiento y redistribución exige gate independiente. No alterar dosis ni protocolo confirmatorio por un reporte sin revisión y aprobación. Esta precisión no autoriza aún descargar textos masivos ni entrenar.

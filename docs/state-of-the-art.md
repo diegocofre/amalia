@@ -43,3 +43,7 @@ Actualizar este inventario con referencia primaria, fecha, revisión, evidencia 
 - [Salamandra 2B](https://huggingface.co/BSC-LT/salamandra-2b): mezcla multilingüe con énfasis en lenguas de España y fuentes publicadas; referencia para adaptación y SFT.
 - [LatamGPT catálogo referencial](https://www.latamgpt.org/resources): posible mecanismo de discovery de aportantes por colección; pendiente análisis íntegro.
 - [SEDICI](https://sedici.unlp.edu.ar/): ruta de adquisición por metadatos y derechos por recurso, no licencia indiscriminada.
+
+## Antecedentes metodológicos transversales
+
+La [metodología de investigación reproducible](research-methodology.md) documenta los referentes de compendios ejecutables (Gentleman y Temple Lang; The Turing Way), workflows científicos (Snakemake, FAIR y DVC), desarrollo de corpus (Common Pile), integración de métodos mixtos (Fetters et al.), documentación lingüística (Bender y Friedman) y error de representación en huellas digitales (Sen et al.). En Amalia confluyen para construir un laboratorio computacional local y una investigación cultural interdisciplinaria. La disponibilidad de infraestructura y datos no demuestra representatividad social ni validez científica.

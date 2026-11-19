@@ -71,3 +71,7 @@ Objetivo de esta inspección: pasar de listas genéricas a mecanismos concretos 
 ## Muestra dirigida y accesibilidad
 
 Ver [factibilidad](feasibility.md): seis fichas SEDICI (4 CC BY 4.0, 2 NC), cero documentos admitidos. El muestreo no permite extrapolación; acceso OAI no confirmado. La cosecha real queda como siguiente gate. No hay medición de tokens elegibles.
+
+## Adquisición como desarrollo del corpus
+
+Toda fuente investigada se registra en el catálogo versionado; cuando es elegible para adquisición se implementa como adaptador incremental con entradas/salidas, límites y manifiesto, conforme a la [metodología de investigación](research-methodology.md). Metadatos, originales permitidos, derivados y corpus elegible son artefactos locales vinculados; el informe mide el estado real del flujo. Revisar cobertura documental y social de los resultados, no inferir representatividad nacional por volumen. Los primeros lotes aprobados permanecen disponibles y no se descargan nuevamente sin razón.

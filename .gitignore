@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 feasibility-local.json
+
+# Local research workspace (datasets, runs and snapshots)
+workspace/
