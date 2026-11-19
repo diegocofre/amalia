@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "run_id": "M00-feasibility-20261119T031736Z",
+  "source": "Operator-provided console transcript, manually extracted verified subset; not an original JSON byte-for-byte archive.",
+  "transcript_limitations": "Accented characters in displayed phrases were corrupted; canonical phrases are in the committed script. Full original JSON and source document bytes not retained here. Unrelated VM maintenance log excluded.",
+  "utc": "2026-11-19T03:17:36.091217+00:00",
+  "git": {
+    "commit": "bf7e803ea4fc064f833daa040424e2c282d6df7c",
+    "tracked_tree_dirty": false
+  },
+  "probe_version": "0.2",
+  "script_sha256": "b5bab744deafa6b737b011ccb69b373e6e5577447ada560eb7a66720586867bb",
+  "python": "3.13.5",
+  "platform": "Windows (Git Bash)",
+  "tests": {
+    "passed": 3,
+    "failed": 0,
+    "names": [
+      "test_license",
+      "test_range_refuses_full_checkpoint",
+      "test_tensor_header"
+    ]
+  },
+  "dependencies": {
+    "PyYAML": "6.0.3",
+    "anyio": "4.16.0",
+    "certifi": "2026.10.23",
+    "click": "8.5.1",
+    "colorama": "0.4.6",
+    "filelock": "4.2.12",
+    "fsspec": "2026.9.0",
+    "h11": "0.16.0",
+    "hf-xet": "1.8.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "huggingface_hub": "1.33.0",
+    "idna": "3.20",
+    "packaging": "26.3",
+    "pip": "25.1.1",
+    "tokenizers": "0.22.2",
+    "tqdm": "4.70.1",
+    "typing_extensions": "4.16.0"
+  },
+  "models": {
+    "PleIAs/Pleias-1.2b-Preview": {
+      "revision": "6556074d10a57b04bdd46c8a34c97bca67f830ab",
+      "license": "apache-2.0",
+      "gated": false,
+      "metadata_sha256": "83ea4eb621711e07dfbb55169391ff1a5e2247d45b0573248090346f691416b1",
+      "config_sha256": "4757a349d8d4d3f89d4a6d037fc4751aeb917ef8afbd2556b09900a7ffef33b1",
+      "tokenizer_sha256": "9c82340f7c692a8df8b753aa046a0fa7aed795162f4e794cfdaeb6b5a309c478",
+      "header_sha256": "b2f3ebc2956d9ae3d68cbd4bead2c0a9f99bef8ee70fce03b52c58b48902536e",
+      "header_bytes": 23008,
+      "stored_tensor_elements": 1195468800,
+      "payload_bytes_declared": 2390937600,
+      "dtype": "BF16",
+      "phrase_token_counts": [
+        12,
+        15,
+        23,
+        16,
+        12
+      ]
+    },
+    "swiss-ai/Apertus-v1.1-1.5B": {
+      "revision": "dbe8919b2f0389888bada6b3a19e81e0ef4286c1",
+      "license": "apache-2.0",
+      "gated": false,
+      "metadata_sha256": "840e37396d1f124a3237711a5a11b80915254880bb7cd1be555783814115e884",
+      "config_sha256": "de9d9567030e39d87149e8532ff1ee4aeb3976738a2eda7c2bdd3e705fe28d92",
+      "tokenizer_sha256": "be12f4375d655cc740864e3a9041bcddd8477942f209d9e7f27f6c8767162638",
+      "header_sha256": "eaaad54c4566950f3158f429c7af344d29f51a5e2b22f143e9637b313c6c5aef",
+      "header_bytes": 25248,
+      "stored_tensor_elements": 1510019136,
+      "payload_bytes_declared": 3020038272,
+      "dtype": "BF16",
+      "phrase_token_counts": [
+        11,
+        13,
+        20,
+        14,
+        12
+      ]
+    }
+  },
+  "datasets": {
+    "PleIAs/common_corpus": {
+      "sha": "307910e4c5d040d6f318e6edf2a2b97849155771",
+      "gated": false,
+      "license": null,
+      "metadata_sha256": "7d889b01d3c9aaeb5a3b99d74fa40eadb189b98143f6a150285ed9ff0703882a"
+    },
+    "latam-gpt/LatamGPT-Corpus-1.0": {
+      "sha": "f29566d17128a96b9e172a156b0d8c92fe24b8d4",
+      "gated": "auto",
+      "license": "other",
+      "metadata_sha256": "c10ea219f074b59fa4e4dd59a67133228f6d7a396c873a65b2b07b0ca2cc529a"
+    },
+    "spanish-ir/messirve": {
+      "sha": "64f6e654ad77f067a96e93e14274cbf4172869b8",
+      "gated": false,
+      "license": "cc-by-nc-4.0",
+      "metadata_sha256": "1be005a4ff5bdef406aa4bcc156bcf27f328ecac85334acab01265a78fd8482b"
+    },
+    "latam-gpt/CHOCLO": {
+      "sha": "adf4dd55ec7a74ecb6d5b686c796c7ef23b7830a",
+      "gated": false,
+      "license": "mit",
+      "metadata_sha256": "eed40a05bb9ff5bca6fdebeb31faeb5c1c26d19657e58533092bfca79c45c37d"
+    },
+    "OpenAssistant/oasst1": {
+      "sha": "fdf72ae0827c1cda404aff25b6603abec9e3399b",
+      "gated": false,
+      "license": "apache-2.0",
+      "metadata_sha256": "85ac12f2acb6ac762954d01216dde43307aec44cd347d321185e88b16fda3581"
+    },
+    "CohereLabs/aya_dataset": {
+      "sha": "f9ea04583f02a8f86404ff6c58bf75fe637df8a2",
+      "gated": false,
+      "license": "apache-2.0",
+      "metadata_sha256": "702224ebe2191a808a61a288dd84763bec3d5787024cfde9cdb27c047ab7cba0"
+    }
+  },
+  "sedici": {
+    "endpoint": "https://sedici.unlp.edu.ar/xoai/snrd",
+    "sampling": "first two pages, not representative",
+    "unique_records": 200,
+    "counts": {
+      "unknown": 7,
+      "candidate_explicit_by_or_cc0": 40,
+      "restricted_nc_or_nd": 153
+    },
+    "pages": [
+      {
+        "sha256": "1d01b98dc5e472f357645e799d9119ec8beed5a6d02ebfee76354380bfc41179",
+        "bytes": 369099
+      },
+      {
+        "sha256": "da1b6e7b20f80ca68783adc7b8be63d0a4f9a29c543fa7ec9c02b45d62105eee",
+        "bytes": 403722
+      }
+    ],
+    "candidate_handles_retained": [
+      {
+        "handle": "10915/1169",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1298",
+        "license_url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "handle": "10915/1342",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1343",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1344",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1345",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1346",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1347",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1348",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1349",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1350",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1351",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1352",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1353",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1354",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1355",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1356",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1357",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1358",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1359",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1360",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1361",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1362",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "handle": "10915/1363",
+        "license_url": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "admitted_documents": 0
+  },
+  "notes": "No model tensor payload or corpus documents downloaded. Dataset license labels are metadata, not admission decisions."
+}

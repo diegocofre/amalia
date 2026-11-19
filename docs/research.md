@@ -1,5 +1,7 @@
 # Agenda científica y laboratorio inicial
 
+El [plan técnico del MVP](mvp-plan.md) detalla el protocolo operativo propuesto para Amalia 0.1 (en revisión); el horizonte de hasta 10M tokens es el laboratorio piloto, previo a cualquier ampliación confirmatoria. Ver también [antecedentes](state-of-the-art.md), [datos](data-sources.md) y [semillas](base-models.md).
+
 ## Pregunta rectora
 
 ¿Hasta qué punto podemos modificar la representación del mundo de un modelo de lenguaje mediante la incorporación deliberada del patrimonio cultural, científico, lingüístico e intelectual de una sociedad?

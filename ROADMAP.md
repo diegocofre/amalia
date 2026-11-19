@@ -13,6 +13,10 @@ Horizontes orientativos, sujetos a evidencia, disponibilidad de datos, cómputo 
 
 Consultá el [diseño técnico](docs/technical-design.md) y la [agenda científica](docs/research.md) para el detalle operativo y metodológico de estas etapas.
 
+## MVP Amalia 0.1
+
+El [plan técnico del MVP](docs/mvp-plan.md) desarrolla F01–F03 en subfases M00–M07. Sus objetivos de escala, presupuesto y gates son borradores sujetos a revisión; no alteran el horizonte general ni constituyen autorización de ejecución. Consultar el [registro de revisiones](docs/mvp-reviews.md).
+
 ## Gates
 
 F01: confirmar licencia y procedencia del modelo semilla, inventario elegible, pipeline reproducible, coste medido, conjunto de evaluación separado.

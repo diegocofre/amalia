@@ -1,5 +1,7 @@
 # Diseño técnico de Amalia
 
+El [plan técnico del MVP](mvp-plan.md) detalla el protocolo operativo propuesto para Amalia 0.1 (en revisión); el horizonte de hasta 10M tokens es el laboratorio piloto, previo a cualquier ampliación confirmatoria. Ver también [antecedentes](state-of-the-art.md), [datos](data-sources.md) y [semillas](base-models.md).
+
 Estado: propuesta fundacional, pendiente de validación experimental y jurídica. No describe infraestructura ya desplegada ni resultados obtenidos.
 
 [README](../README.md) · [Roadmap](../ROADMAP.md) · [Agenda científica](research.md) · [Licencias y procedencia](licensing.md)
@@ -180,3 +182,7 @@ Criterio F01: el circuito funciona y puede ser reproducido. Un resultado nulo no
 Estas referencias orientan la investigación, no certifican derechos ni establecen versiones aprobadas.
 
 Volver al [roadmap](../ROADMAP.md) o a la [agenda científica](research.md).
+
+## Operación local de investigación
+
+La [metodología del laboratorio ejecutable](research-methodology.md) complementa este diseño: cada fuente elegible puede aportar mediante un adaptador reproducible lotes incrementales locales, con etapas explícitas de descubrimiento, adquisición, curaduría, admisión, reporte y snapshot. El catálogo y las métricas sirven al diseño científico iterativo, no a un ciclo autónomo que altere el experimento confirmatorio. Priorizar CLI Python y almacenamiento local simple; orquestación y sincronización avanzadas quedan condicionadas al volumen/necesidad.
