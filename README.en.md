@@ -1,16 +1,24 @@
-<h1 align="center">
-  <img src="assets/amalia-logo.webp" alt="Amalia" width="472">
-</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/amalia-logo-dark.webp">
+    <source media="(prefers-color-scheme: light)" srcset="assets/amalia-logo-light.webp">
+    <img src="assets/amalia-logo-light.webp" alt="Amalia" width="480">
+  </picture>
+</p>
 
-<h2 align="center">The future has a memory, too.</h2>
+<h2 align="center">Open intelligence, born in the South.</h2>
 
 <p align="center">An Argentine open artificial intelligence project.</p>
 
-<p align="center"><a href="docs/technical-design.md">Technical design (ES)</a> · <a href="docs/sponsorship.md"><strong>Institutional sponsorship (ES)</strong></a> · <a href="CONTRIBUTING.md">Contribute (ES)</a> · <a href="README.md">Español</a></p>
+<p align="center">
+  <a href="README.md">The project (ES)</a> &nbsp;·&nbsp;
+  <a href="docs/technical-design.md">Technical design (ES)</a> &nbsp;·&nbsp;
+  <a href="docs/sponsorship.md"><strong>Sponsorship (ES)</strong></a> &nbsp;·&nbsp;
+  <a href="CONTRIBUTING.md">Contribute (ES)</a> &nbsp;·&nbsp;
+  <a href="README.md">Español</a>
+</p>
 
 ---
-
-**Project status:** founding stage · open research · first experimental release in planning.
 
 Amalia explores how a language model's learned representation of the world can change through deliberate incorporation of a society's cultural, scientific, linguistic and intellectual heritage.
 
@@ -28,4 +36,24 @@ We are seeking a founding sponsor and academic, cultural and technology partners
 
 We welcome researchers, engineers, authors, educators, cultural institutions, communities and infrastructure or funding partners. No institutional participation is yet confirmed. Please propose ideas and sources through repository issues; do not upload documents without verified permissions or personal information.
 
-See the [Spanish README](README.md), [roadmap](ROADMAP.md), [research agenda](docs/research.md), [technical design (Spanish)](docs/technical-design.md), [licensing policy](docs/licensing.md), [governance](GOVERNANCE.md) and [contribution guide](CONTRIBUTING.md).
+## Documentation
+
+Most of the founding documents are currently in Spanish.
+
+| Document | Scope |
+|---|---|
+| [Technical design](docs/technical-design.md) | Architecture, corpus, training, evaluation and infrastructure |
+| [Research agenda](docs/research.md) | Hypotheses and experimental methodology |
+| [Roadmap](ROADMAP.md) | Milestones and future model generations |
+| [Amalia Federal](docs/federal.md) | Cultural heritage and community participation |
+| [Institutional sponsorship](docs/sponsorship.md) | Funding and collaboration |
+| [Licensing and provenance](docs/licensing.md) | Rights, privacy and traceability |
+| [Governance](GOVERNANCE.md) | Scientific independence and continuity |
+| [Contribution guide](CONTRIBUTING.md) | How to get involved |
+| [Credits](AUTHORS.md) | Contributors |
+| [Apache-2.0 license](LICENSE) | Software license |
+| [Notices](NOTICE) | Licensing notices |
+
+---
+
+<p align="center"><strong>Amalia · Open intelligence, born in the South.</strong></p>

@@ -1,22 +1,28 @@
-<h1 align="center">
-  <img src="assets/amalia-logo.webp" alt="Amalia" width="472">
-</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/amalia-logo-dark.webp">
+    <source media="(prefers-color-scheme: light)" srcset="assets/amalia-logo-light.webp">
+    <img src="assets/amalia-logo-light.webp" alt="Amalia" width="480">
+  </picture>
+</p>
 
-<h2 align="center">El futuro también tiene memoria.</h2>
+<h2 align="center">Inteligencia abierta, nacida al sur.</h2>
 
 <p align="center">Proyecto argentino de inteligencia artificial abierta.</p>
 
-<p align="center"><a href="docs/technical-design.md">Explorá el proyecto</a> · <a href="docs/sponsorship.md"><strong>Patrocinio institucional</strong></a> · <a href="CONTRIBUTING.md">Sumate</a> · <a href="README.en.md">English</a></p>
+<p align="center">
+  <a href="#qué-es-amalia">El proyecto</a> &nbsp;·&nbsp;
+  <a href="docs/technical-design.md">Diseño técnico</a> &nbsp;·&nbsp;
+  <a href="docs/sponsorship.md"><strong>Patrocinio</strong></a> &nbsp;·&nbsp;
+  <a href="CONTRIBUTING.md">Sumate</a> &nbsp;·&nbsp;
+  <a href="README.en.md">English</a>
+</p>
 
 ---
 
 > Lo que vieron mis ojos fue simultáneo: lo que transcribiré, sucesivo, porque el lenguaje lo es.
 >
 > — Jorge Luis Borges, *El Aleph*. [Fuente](https://www.iar.unlp.edu.ar/index.php/2022/06/28/fragmento-de-el-aleph/)
-
-[Visión](#qué-es-amalia) · [Investigación](#nuestra-pregunta-fundacional) · [Tecnología](#cómo-empezamos) · [Amalia Federal](#una-construcción-colectiva-y-federal) · [Patrocinio](#construyamos-amalia-juntos) · [Documentación](#documentación)
-
-**Estado del proyecto:** etapa fundacional · investigación abierta · primera versión experimental en planificación.
 
 ## ¿Qué conocimiento le estamos dejando al futuro?
 
@@ -42,7 +48,7 @@ Queremos investigar cómo nuestra literatura, historia, ciencia, formas de comun
 
 ### Nuestra pregunta fundacional
 
-**¿Hasta qué punto podemos modificar la representación del mundo de un modelo de lenguaje mediante la incorporación deliberada del patrimonio cultural, científico, lingüístico e intelectual de una sociedad?**
+> **¿Hasta qué punto podemos modificar la representación del mundo de un modelo de lenguaje mediante la incorporación deliberada del patrimonio cultural, científico, lingüístico e intelectual de una sociedad?**
 
 No buscamos imponer una personalidad mediante instrucciones. Queremos observar si ciertas características culturales emergen del propio aprendizaje, medirlas y comprenderlas, sin sacrificar la pluralidad ni ocultar resultados negativos.
 
@@ -78,7 +84,7 @@ Conocé la propuesta de [Amalia Federal](docs/federal.md).
 
 La [gobernanza](GOVERNANCE.md) y la [política de licencias y procedencia](docs/licensing.md) desarrollan estos compromisos.
 
-## Cómo empezamos
+## Cómo vamos a construir Amalia
 
 Partiremos de modelos abiertos pequeños, inicialmente candidatos de la familia Pleias, sujetos a auditoría de su formación y licencia. Construiremos un corpus trazable, realizaremos experimentos de entrenamiento continuo con grupos de control y evaluaremos mejoras y regresiones. Después exploraremos modelos conversacionales mayores.
 
@@ -119,7 +125,9 @@ El proyecto está en su etapa fundacional: aún no hay modelos entrenados ni cor
 
 Para saber cómo colaborar, consultá la [guía de contribuciones](CONTRIBUTING.md). Las instituciones interesadas pueden conocer nuestra [propuesta de patrocinio](docs/sponsorship.md).
 
-## Documentación
+## Explorá la documentación
+
+La visión científica, la arquitectura, las etapas de desarrollo y las formas de participar están disponibles en los siguientes documentos.
 
 | Documento | Contenido |
 |---|---|
@@ -135,7 +143,6 @@ Para saber cómo colaborar, consultá la [guía de contribuciones](CONTRIBUTING.
 | [Licencia Apache-2.0](LICENSE) | Texto legal del software |
 | [Avisos de licencias](NOTICE) | Alcance de las licencias y derechos de terceros |
 
-[Read in English](README.en.md)
 
 ## Licencias
 
@@ -143,4 +150,4 @@ El software original se distribuye bajo [Apache-2.0](LICENSE), la documentación
 
 ---
 
-<p align="center"><strong>Amalia · El futuro también tiene memoria.</strong></p>
+<p align="center"><strong>Amalia · Inteligencia abierta, nacida al sur.</strong></p>
