@@ -70,9 +70,24 @@ Buscamos colaboradores y patrocinadores institucionales que quieran acompañar e
 
 El proyecto está en su etapa fundacional: aún no hay modelos entrenados ni corpus publicado. La recepción formal de obras se habilitará cuando estén definidos los procedimientos legales y de privacidad. Mientras tanto, podés proponer fuentes, colaborar en el diseño o participar a través de los [issues](https://github.com/diegocofre/amalia/issues).
 
+## Documentación
+
+| Documento | Contenido |
+|---|---|
+| [Roadmap](ROADMAP.md) | Etapas, hitos y evolución de modelos |
+| [Agenda científica](docs/research.md) | Hipótesis, controles y evaluación |
+| [Amalia Federal](docs/federal.md) | Participación y recuperación de patrimonio |
+| [Gobernanza](GOVERNANCE.md) | Continuidad colectiva e independencia |
+| [Contribuciones](CONTRIBUTING.md) | Cómo participar |
+| [Licencias y procedencia](docs/licensing.md) | Derechos, privacidad y trazabilidad |
+| [Patrocinio institucional](docs/sponsorship.md) | Cooperación y financiamiento |
+| [Créditos](AUTHORS.md) | Reconocimiento de contribuciones |
+
+[Read in English](README.en.md)
+
 ## Licencias
 
-La política propuesta es Apache-2.0 para el software, CC BY 4.0 para documentación original y licencias abiertas compatibles para los modelos y cada documento del corpus. Los materiales de terceros mantienen sus derechos originales. La cita de Borges se utiliza como objeto de comentario científico y no se incorpora al corpus ni se ofrece bajo una licencia del proyecto.
+El software original se distribuye bajo [Apache-2.0](LICENSE), la documentación original bajo CC BY 4.0 y cada futuro modelo y documento del corpus contará con licencias abiertas compatibles. Los materiales de terceros mantienen sus derechos originales. La cita de Borges se utiliza como objeto de comentario científico y no se incorpora al corpus ni se ofrece bajo una licencia del proyecto.
 
 ---
 
