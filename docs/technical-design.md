@@ -1,5 +1,7 @@
 # Diseño técnico de Amalia
 
+El [plan técnico del MVP](mvp-plan.md) detalla el protocolo operativo propuesto para Amalia 0.1 (en revisión); el horizonte de hasta 10M tokens es el laboratorio piloto, previo a cualquier ampliación confirmatoria. Ver también [antecedentes](state-of-the-art.md), [datos](data-sources.md) y [semillas](base-models.md).
+
 Estado: propuesta fundacional, pendiente de validación experimental y jurídica. No describe infraestructura ya desplegada ni resultados obtenidos.
 
 [README](../README.md) · [Roadmap](../ROADMAP.md) · [Agenda científica](research.md) · [Licencias y procedencia](licensing.md)

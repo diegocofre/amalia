@@ -42,6 +42,11 @@ Most of the founding documents are currently in Spanish.
 
 | Document | Scope |
 |---|---|
+| [MVP technical plan](docs/mvp-plan.md) | Draft experimental protocol |
+| [State of the art](docs/state-of-the-art.md) | Related projects and bibliography |
+| [Data sources](docs/data-sources.md) | Inventory and admission criteria |
+| [Base models](docs/base-models.md) | Candidate audit |
+| [Review log](docs/mvp-reviews.md) | Findings and gates |
 | [Technical design](docs/technical-design.md) | Architecture, corpus, training, evaluation and infrastructure |
 | [Research agenda](docs/research.md) | Hypotheses and experimental methodology |
 | [Roadmap](ROADMAP.md) | Milestones and future model generations |

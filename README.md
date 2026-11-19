@@ -131,6 +131,11 @@ La visión científica, la arquitectura, las etapas de desarrollo y las formas d
 
 | Documento | Contenido |
 |---|---|
+| [Plan técnico MVP 0.1](docs/mvp-plan.md) | Protocolo experimental en revisión |
+| [Antecedentes y estado del arte](docs/state-of-the-art.md) | Proyectos, bibliografía y colaboraciones |
+| [Fuentes y datasets](docs/data-sources.md) | Inventario y condiciones de admisión |
+| [Modelos semilla](docs/base-models.md) | Auditoría y selección |
+| [Registro de revisiones](docs/mvp-reviews.md) | Hallazgos y gates |
 | [Diseño técnico](docs/technical-design.md) | Arquitectura, corpus, entrenamiento, infraestructura y escalamiento |
 | [Roadmap](ROADMAP.md) | Etapas, hitos y evolución de modelos |
 | [Agenda científica](docs/research.md) | Hipótesis, controles y evaluación |
