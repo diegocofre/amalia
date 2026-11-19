@@ -41,3 +41,7 @@ Esta pasada no constituye auditoría exhaustiva ni aprobación de candidato o da
 - R01/R02: revisiones exactas identificadas y configuración main leída; falta verificación por SHA, genealogía y hashes. Nuevo desajuste Apertus entre tamaño anunciado de tensor y parámetros declarados, mantener abierto.
 - R05: cuatro fichas con CC BY 4.0, dos NC; muestra dirigida, cero admitidos. Consulta OAI inaccesible/HTTP 400, no inferir caída del servicio ni disponibilidad global. Sigue abierto.
 - R14 (importante): la prueba documental no permite medir fertilidad ni volumen. [Prueba acotada](feasibility.md) y script exploratorio propuestos; no ejecutados en el entorno de investigación. Cierre: resultados reales, hashes y muestra aprobada, no meramente existencia del script.
+
+## Metodología y probe ampliado
+
+R14: ampliado script para metadatos Hub, encabezados Safetensors y endpoints alternativos; declara commit/hash y errores. Añadidas pruebas unitarias y dependencia directa fijada. Pendiente ejecución local, no cerrar hallazgo. Se establece [metodología de investigación reproducible](research-methodology.md) para humanos y agentes; versionar cada paso y evidencia revisada.

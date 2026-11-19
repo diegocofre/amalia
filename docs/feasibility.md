@@ -45,10 +45,15 @@ El endpoint OAI-PMH /oai/snrd?verb=Identify no fue accesible vía navegador de i
 Desde raíz del repo, Python 3.12 y conexión pública:
 
 ```bash
-python -m pip install tokenizers
+python -m pip install -r tools/requirements-feasibility.txt
+python -m unittest discover -s tests -v
 python tools/feasibility_probe.py > feasibility-local.json
 ```
 
 El script no descarga pesos ni documentos, no usa credenciales ni acepta condiciones de datasets. Descarga configs y tokenizer JSON fijados por SHA (límite 24 MiB por respuesta), mide tokenización de frases originales de prueba y consulta hasta dos páginas de metadatos OAI. No es muestra probabilística. Los conteos de frases no representan tokens del corpus. Salida local: JSON con hashes, versiones, parámetros declarados, incidencias y conteos de derechos explícitos. No publicar ciegamente logs ni metadatos privados. Si una fuente falla, las restantes conservan su resultado; repetir con endpoint oficial verificado o buscar alternativa. El script es exploratorio y todavía no fue ejecutado aquí.
 
 Próximo gate: validar acceso, revisar referencias y conseguir una muestra de textos explícitamente aprobados; luego extraer texto y medir tokens útiles con el tokenizer elegido. No calcular proyecciones sin denominador conocido y muestreo apropiado. No pasar a CPT ni declarar elegibilidad por el éxito del script.
+
+## Ampliación v0.2 del probe
+
+Además consulta metadatos públicos de seis datasets, intenta rutas alternativas de SEDICI, registra Git SHA, hash del script y versiones, e inspecciona exclusivamente encabezados Safetensors por HTTP Range (rechaza respuesta 200 sin leer el cuerpo del checkpoint). Los elementos almacenados incluyen buffers y no equivalen automáticamente a parámetros activos. No obtiene filas de corpus ni acepta condiciones gated. Registra hasta 50 handles públicos de SEDICI y enlaces de licencia declarados por endpoint, sin copiar el resto de los metadatos. Registra versiones instaladas (nombres y versiones, no rutas). Las respuestas están acotadas por tamaño y timeout por solicitud; los fallos quedan en el JSON. Dependencia directa fijada, dependencias transitivas efectivas deben registrarse antes de corridas confirmatorias. Pruebas unitarias añadidas, pendientes de ejecución local. Revisar el JSON antes de versionar evidencias según [metodología](research-methodology.md).

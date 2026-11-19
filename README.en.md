@@ -42,6 +42,7 @@ Most of the founding documents are currently in Spanish.
 
 | Document | Scope |
 |---|---|
+| [Research methodology](docs/research-methodology.md) | Versioned procedures and evidence |
 | [MVP technical plan](docs/mvp-plan.md) | Draft experimental protocol |
 | [State of the art](docs/state-of-the-art.md) | Related projects and bibliography |
 | [Data sources](docs/data-sources.md) | Inventory and admission criteria |

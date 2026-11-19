@@ -131,6 +131,7 @@ La visión científica, la arquitectura, las etapas de desarrollo y las formas d
 
 | Documento | Contenido |
 |---|---|
+| [Metodología de investigación](docs/research-methodology.md) | Versionado, evidencia y reproducibilidad |
 | [Plan técnico MVP 0.1](docs/mvp-plan.md) | Protocolo experimental en revisión |
 | [Antecedentes y estado del arte](docs/state-of-the-art.md) | Proyectos, bibliografía y colaboraciones |
 | [Fuentes y datasets](docs/data-sources.md) | Inventario y condiciones de admisión |
