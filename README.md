@@ -1,8 +1,8 @@
 # Amalia
 
-**Conocimiento universal. Raíces argentinas.**
+**El futuro también tiene memoria.**
 
-Un proyecto abierto, soberano y colectivo de investigación y desarrollo de inteligencia artificial.
+Proyecto argentino de inteligencia artificial abierta.
 
 > Lo que vieron mis ojos fue simultáneo: lo que transcribiré, sucesivo, porque el lenguaje lo es.
 >
@@ -112,4 +112,4 @@ El software original se distribuye bajo [Apache-2.0](LICENSE), la documentación
 
 ---
 
-**Amalia — Conocimiento universal. Raíces argentinas.**
+**Amalia — El futuro también tiene memoria.**

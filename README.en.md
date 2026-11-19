@@ -1,8 +1,8 @@
 # Amalia
 
-**Universal knowledge. Argentine roots.**
+**The future has a memory, too.**
 
-An open, sovereign and collective AI research initiative originating in Argentina.
+An Argentine open artificial intelligence project.
 
 Amalia explores how a language model's learned representation of the world can change through deliberate incorporation of a society's cultural, scientific, linguistic and intellectual heritage.
 
