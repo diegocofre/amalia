@@ -70,8 +70,12 @@ Objetivo de esta inspección: pasar de listas genéricas a mecanismos concretos 
 
 ## Muestra dirigida y accesibilidad
 
-Ver [factibilidad](feasibility.md): seis fichas SEDICI (4 CC BY 4.0, 2 NC), cero documentos admitidos. El muestreo no permite extrapolación; acceso OAI no confirmado. La cosecha real queda como siguiente gate. No hay medición de tokens elegibles.
+Ver [factibilidad](feasibility.md): seis fichas SEDICI (4 CC BY 4.0, 2 NC), cero documentos admitidos. El muestreo no permite extrapolación; acceso OAI confirmado en la ejecución local posterior. No hay medición de tokens elegibles.
 
 ## Adquisición como desarrollo del corpus
 
 Toda fuente investigada se registra en el catálogo versionado; cuando es elegible para adquisición se implementa como adaptador incremental con entradas/salidas, límites y manifiesto, conforme a la [metodología de investigación](research-methodology.md). Metadatos, originales permitidos, derivados y corpus elegible son artefactos locales vinculados; el informe mide el estado real del flujo. Revisar cobertura documental y social de los resultados, no inferir representatividad nacional por volumen. Los primeros lotes aprobados permanecen disponibles y no se descargan nuevamente sin razón.
+
+## Resultado de descubrimiento local
+
+[Corrida M00](../evidence/M00-feasibility-20261119T031736Z.json): endpoint /xoai/snrd operativo, 200 registros consecutivos, 40 candidatos BY/CC0 (20%), 153 NC/ND (76,5%), 7 desconocidos (3,5%). No es una muestra probabilística. 24 handles candidatos conservados en la evidencia; falta identificar obra y derechos aplicables antes de adquirir texto. Common Corpus sin licencia global declarada en la API, LatamGPT gated auto con licencias múltiples, MessIRve CC BY-NC, CHOCLO MIT (solo evaluación), OASST1 y Aya Apache-2.0 declaradas. Revisiones y hashes registrados; ninguna licencia de ficha equivale a admisión.

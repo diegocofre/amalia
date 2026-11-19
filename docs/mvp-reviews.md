@@ -53,3 +53,7 @@ R15 (importante, abierto): el probe actual no produce corpus. Se definió el con
 ## Síntesis metodológica KISS
 
 Se reducen las instrucciones operativas a un ciclo único; la bibliografía permanece en el estado del arte. Se conserva el criterio de cierre R15 (corpus real local, trazabilidad, reporte, exclusión, reanudación y no duplicación). No se exige CLI, jerarquía de directorios ni orquestador antes de demostrar necesidad. No cambia el protocolo experimental ni el estado de los gates.
+
+## Primera ejecución local M00
+
+3/3 tests válidos; [evidencia](../evidence/M00-feasibility-20261119T031736Z.json). R02: discrepancia de tamaño del archivo resuelta para el SHA inspeccionado (1,510B elementos), queda auditoría de parámetros entrenables, maestro y runtime. R05: acceso SEDICI verificado y 40/200 candidatos declarados; volumen elegible desconocido, abierto. R14: ejecución y hashes acreditados, falta muestra textual aprobada y fertilidad sobre corpus, parcial. R15: pendiente primer lote real. R01, R03 y R09 no se cierran por metadatos. No se cambia semilla ni protocolo confirmatorio.

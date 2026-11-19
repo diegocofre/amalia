@@ -47,4 +47,8 @@ No se han medido modelos. Las tarjetas y publicaciones no permiten asignar una p
 
 ## Evidencia observada y configuración fija
 
-Ver [prueba de factibilidad](feasibility.md): configs, revisiones candidatas exactas y tamaños anunciados. Apertus presenta discrepancia entre tamaño de parámetros declarado y archivo BF16; no cerrar R02 hasta reconciliar. No se han descargado tokenizadores ni medido fertilidad. Mantener candidato provisoriamente.
+Ver [prueba de factibilidad](feasibility.md): configs, revisiones candidatas exactas y tamaños anunciados. Apertus presenta discrepancia entre tamaño de parámetros declarado y archivo BF16; no cerrar R02 hasta reconciliar. Se recuperaron ambos tokenizadores por SHA y se midieron cinco frases; falta una evaluación de fertilidad representativa. Mantener candidatos provisoriamente.
+
+## Medición de checkpoint y tokenización
+
+[Corrida local M00](../evidence/M00-feasibility-20261119T031736Z.json): 1.195.468.800 y 1.510.019.136 elementos almacenados respectivamente; no equivalen automáticamente a parámetros entrenables (buffers). La cifra nominal de 2B storage indicada previamente para Apertus no coincide con este checkpoint exacto. Estimación de estados a 18 bytes/elemento: 21,52 y 27,18 GB, antes de activaciones y overhead; confirmar instanciación y entrenamiento antes de presupuestar. Apertus tokenizó 70 frente a 78 tokens de Pleias en cinco frases del script. Esto favorece reevaluar Apertus, no elegirlo sin benchmark, runtime y auditoría heredada.

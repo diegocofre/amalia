@@ -86,3 +86,7 @@ La selección conserva dos finalistas provisionales. Salamandra 2B y SmolLM3 3B 
 ## Laboratorio ejecutable y adquisición acumulativa
 
 El MVP adopta la [metodología de compendio de investigación ejecutable](research-methodology.md). M00 conserva el probe de solo lectura como descubrimiento; M02/M03 deben producir un corpus real local, elegible y persistente por lotes, con catálogo, linaje y reportes generados. Antes de ampliar nuevas fuentes, validar un adaptador piloto con límites, reanudación, idempotencia, admisión y snapshot. Los datos de prueba se separan de entrenamiento y redistribución exige gate independiente. No alterar dosis ni protocolo confirmatorio por un reporte sin revisión y aprobación. Esta precisión no autoriza aún descargar textos masivos ni entrenar.
+
+## Actualización por evidencia local
+
+[Primera corrida M00](../evidence/M00-feasibility-20261119T031736Z.json) confirma acceso a los dos checkpoints por encabezados (Pleias 1,195B, Apertus 1,510B elementos almacenados), tokenizadores, fichas Hub y SEDICI. Para Apertus, corregir el cálculo preliminar de estados de entrenamiento a ~27,18 GB usando 18 bytes por elemento observado, sin activaciones ni overhead; mantener margen y medir parámetros entrenables y VRAM antes de gasto. No extrapolar 20% de candidatos SEDICI al universo ni inferir 35M tokens. Siguiente incremento: adquisición acotada de textos autorizados y primer corpus local; aprobación de alcance antes de implementar. Plan sigue 0.2, no autoriza entrenamiento.
