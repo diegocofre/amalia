@@ -5,3 +5,5 @@ Registrar aquí resultados pequeños, revisados y compartibles por ID de corrida
 Los reportes de corpus enlazan corrida, fuente y snapshot/manifiesto. Conservar solo evidencia revisada y legalmente compartible; los archivos de trabajo y originales autorizados viven fuera de Git en el espacio de laboratorio. No usar métricas descriptivas como estimaciones de una población sin diseño apropiado.
 
 - [M00-feasibility-20261119T031736Z](M00-feasibility-20261119T031736Z.json): primera corrida local, extracción compacta de consola revisada; 3/3 tests, modelos y metadatos, sin datos textuales admitidos.
+
+- [SEDICI piloto 001 — 2026-11-19](sedici-pilot-001-20261119.json): dos corridas locales, 8/8 pruebas, hashes y tokenización repetidos, tres candidatos, cero admitidos; extracción estructurada del log revisado, sin textos.

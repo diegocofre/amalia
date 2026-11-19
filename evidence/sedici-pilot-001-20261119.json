@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "batch_id": "sedici-pilot-001",
+  "source": "Structured subset of two JSON reports in operator-provided console transcript; not original report files.",
+  "transcript_sha256": "9e257ca3e06b5f794d3d1892544267e4805c36e54ef9c2daaf99032a019c22a9",
+  "git": {
+    "commit": "2de2e7817f3466a9887169b46be87a174ace8fff",
+    "tracked_tree_dirty": false
+  },
+  "script_sha256": "9dda7c3b53f3d60751cfe9d79acfc53bfee231f4dc7c065fee39dad4123953bc",
+  "manifest_sha256": "deb9ac8831285eea5e816925181b0eaebbe3f707b9670b1c3434361c72ba4d01",
+  "python": "3.13.5",
+  "dependencies": {
+    "pypdf": "7.1.1",
+    "tokenizers": "0.22.2"
+  },
+  "tokenizers": {
+    "PleIAs/Pleias-1.2b-Preview": {
+      "revision": "6556074d10a57b04bdd46c8a34c97bca67f830ab",
+      "sha256": "9c82340f7c692a8df8b753aa046a0fa7aed795162f4e794cfdaeb6b5a309c478"
+    },
+    "swiss-ai/Apertus-v1.1-1.5B": {
+      "revision": "dbe8919b2f0389888bada6b3a19e81e0ef4286c1",
+      "sha256": "be12f4375d655cc740864e3a9041bcddd8477942f209d9e7f27f6c8767162638"
+    }
+  },
+  "tests": {
+    "passed": 8,
+    "failed": 0,
+    "elapsed_seconds": 0.029
+  },
+  "runs": [
+    {
+      "run_id": "sedici-pilot-20261119T033237826387Z",
+      "utc": "2026-11-19T03:32:37.826387+00:00",
+      "cached_pdf_count": 0
+    },
+    {
+      "run_id": "sedici-pilot-20261119T033239815493Z",
+      "utc": "2026-11-19T03:32:39.815493+00:00",
+      "cached_pdf_count": 3
+    }
+  ],
+  "comparison": "All document fields equal except cached_pdf (false to true for each document).",
+  "documents": [
+    {
+      "id": "sedici-165604",
+      "raw_sha256": "49ad041b50a39054cae77f981e20bbd0d26639694e4e7c69cbf0b539888d8332",
+      "text_sha256": "91c989cacf052ef89a9c368288ddb20fe19ddcf64eae1966436d503606a19288",
+      "pdf_bytes": 333021,
+      "text_bytes": 25891,
+      "characters": 25469,
+      "pdf_pages": 10,
+      "extracted_pages": 10,
+      "empty_pages": 0,
+      "email_redactions": 0,
+      "token_counts": {
+        "PleIAs/Pleias-1.2b-Preview": 7201,
+        "swiss-ai/Apertus-v1.1-1.5B": 6863
+      },
+      "status": "pending_review",
+      "redistribution_approved": false
+    },
+    {
+      "id": "sedici-162286",
+      "raw_sha256": "b161d8130594a5e01f5bdc0665fe4f973d4bc0809ff17e2f1ea01fe7dbfc7403",
+      "text_sha256": "5b863931eb81a8bd9b8b30af4bf22b7783c3f71763571334c130b0c5b7721938",
+      "pdf_bytes": 5094017,
+      "text_bytes": 78996,
+      "characters": 77367,
+      "pdf_pages": 37,
+      "extracted_pages": 32,
+      "empty_pages": 0,
+      "email_redactions": 1,
+      "token_counts": {
+        "PleIAs/Pleias-1.2b-Preview": 23816,
+        "swiss-ai/Apertus-v1.1-1.5B": 23970
+      },
+      "status": "pending_review",
+      "redistribution_approved": false
+    },
+    {
+      "id": "sedici-169483",
+      "raw_sha256": "b054378ed42b91e30b422fa823c83fa1fcdae95c5d7a7138afa4c0ba6bbacd72",
+      "text_sha256": "46df7999ed1e45a34e2be941dc59cbda11d237cdc52f537b2378a2ebbeef59b5",
+      "pdf_bytes": 171018,
+      "text_bytes": 42475,
+      "characters": 41270,
+      "pdf_pages": 13,
+      "extracted_pages": 13,
+      "empty_pages": 0,
+      "email_redactions": 2,
+      "token_counts": {
+        "PleIAs/Pleias-1.2b-Preview": 11080,
+        "swiss-ai/Apertus-v1.1-1.5B": 10522
+      },
+      "status": "pending_review",
+      "redistribution_approved": false
+    }
+  ],
+  "summary": {
+    "pending_review": 3,
+    "admitted": 0,
+    "duplicate": 0,
+    "error": 0
+  },
+  "eligible_corpus_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "eligible_documents": 0,
+  "candidate_characters": 144106,
+  "candidate_tokens": {
+    "PleIAs/Pleias-1.2b-Preview": 42097,
+    "swiss-ai/Apertus-v1.1-1.5B": 41355
+  },
+  "warnings": {
+    "count": 50,
+    "category": "pypdf CFF Type1 font decoding; fontTools absent",
+    "note": "Nonfatal; extracted text fidelity not established."
+  },
+  "limitations": "Directed sample, not representative. Text quality, rights and privacy still pending; no texts or PDFs are included in evidence. No training or redistribution authorized."
+}

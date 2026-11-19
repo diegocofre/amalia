@@ -52,3 +52,7 @@ Ver [prueba de factibilidad](feasibility.md): configs, revisiones candidatas exa
 ## Medición de checkpoint y tokenización
 
 [Corrida local M00](../evidence/M00-feasibility-20261119T031736Z.json): 1.195.468.800 y 1.510.019.136 elementos almacenados respectivamente; no equivalen automáticamente a parámetros entrenables (buffers). La cifra nominal de 2B storage indicada previamente para Apertus no coincide con este checkpoint exacto. Estimación de estados a 18 bytes/elemento: 21,52 y 27,18 GB, antes de activaciones y overhead; confirmar instanciación y entrenamiento antes de presupuestar. Apertus tokenizó 70 frente a 78 tokens de Pleias en cinco frases del script. Esto favorece reevaluar Apertus, no elegirlo sin benchmark, runtime y auditoría heredada.
+
+## Comparación en documentos reales
+
+[Lote SEDICI 001](../evidence/sedici-pilot-001-20261119.json): Pleias 42.097 tokens, Apertus 41.355, diferencia descriptiva de 1,76% a favor de Apertus. En el artículo sobre Sarmiento, Pleias usa 23.816 frente a 23.970 tokens. La ventaja de 10,3% observada en cinco frases no se reproduce con igual magnitud aquí. Tres documentos dirigidos, pendientes de calidad de extracción (advertencias CFF Type1); no establecer superioridad general ni elegir semilla por esta métrica.

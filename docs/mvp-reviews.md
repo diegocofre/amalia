@@ -61,3 +61,7 @@ Se reducen las instrucciones operativas a un ciclo único; la bibliografía perm
 ## Primer lote SEDICI
 
 R15: implementado adaptador local acotado con manifiesto de tres fuentes, caché por ID, extracción por hash, reporte y filtro de admisión por revisión de derechos/privacidad y hashes. Añadidas cinco pruebas unitarias offline. Pendiente prueba local real, repetición, inspección de textos y admisión, snapshot aún no implementado. R05 y R14 siguen abiertos. No se afirma disponibilidad o elegibilidad medida hasta recibir evidencia.
+
+## Evidencia del lote 001
+
+[Dos corridas locales](../evidence/sedici-pilot-001-20261119.json): R15 parcial, adquisición, extracción, caché, hash, repetición y exclusión de pendientes verificados en lote de tres; no existe aún corpus admitido ni snapshot. La recuperación tras una interrupción real no se probó. R14 parcial: tokenización sobre 144.106 caracteres observados, todavía pendiente revisión textual; no extrapolar. R05 abierto: volumen elegible desconocido, cero admitidos. Nueva incidencia R16 (importante para admisión): 50 advertencias CFF Type1 por fontTools ausente. Fijar dependencia, repetir desde caché y revisar calidad; registrar cualquier cambio de hashes, no aprobar hashes antiguos si cambia el texto. Ningún cambio de semilla ni protocolo.
