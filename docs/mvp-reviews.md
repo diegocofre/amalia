@@ -65,3 +65,5 @@ R15: implementado adaptador local acotado con manifiesto de tres fuentes, caché
 ## Evidencia del lote 001
 
 [Dos corridas locales](../evidence/sedici-pilot-001-20261119.json): R15 parcial, adquisición, extracción, caché, hash, repetición y exclusión de pendientes verificados en lote de tres; no existe aún corpus admitido ni snapshot. La recuperación tras una interrupción real no se probó. R14 parcial: tokenización sobre 144.106 caracteres observados, todavía pendiente revisión textual; no extrapolar. R05 abierto: volumen elegible desconocido, cero admitidos. Nueva incidencia R16 (importante para admisión): 50 advertencias CFF Type1 por fontTools ausente. Fijar dependencia, repetir desde caché y revisar calidad; registrar cualquier cambio de hashes, no aprobar hashes antiguos si cambia el texto. Ningún cambio de semilla ni protocolo.
+
+R16: fijada dependencia fonttools 4.66.1, indicadores de calidad y comparación opcional con evidencia del lote 001; dos pruebas offline adicionales. No se ha ejecutado todavía. La revisión manual de texto, derechos y privacidad sigue siendo requisito de admisión. No se modifica el manifiesto de permisos.

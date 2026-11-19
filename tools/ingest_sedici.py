@@ -2,6 +2,7 @@
 import argparse
 import io
 import json
+import logging
 import re
 import sys
 import tempfile
@@ -83,6 +84,43 @@ def normalize(text):
     return text.strip(), redactions
 
 
+def text_quality(text):
+    return {
+        "replacement_characters": text.count("\uFFFD"),
+        "private_use_characters": sum(unicodedata.category(c) == "Co" for c in text),
+        "unexpected_control_characters": sum(
+            unicodedata.category(c) == "Cc" and c not in "\n\t" for c in text),
+    }
+
+
+class ExtractionWarnings(logging.Handler):
+    def __init__(self):
+        super().__init__(logging.WARNING)
+        self.count = 0
+
+    def emit(self, record):
+        self.count += 1
+
+
+def compare_baseline(records, baseline):
+    previous = {d["id"]: d for d in baseline["documents"]}
+    results = []
+    for doc in records:
+        old = previous.get(doc["id"])
+        if old is None or "text_sha256" not in doc:
+            continue
+        results.append({
+            "id": doc["id"],
+            "raw_unchanged": old["raw_sha256"] == doc["raw_sha256"],
+            "text_unchanged": old["text_sha256"] == doc["text_sha256"],
+            "character_delta": doc["characters"] - old["characters"],
+            "token_deltas": {name: count - old["token_counts"][name]
+                             for name, count in doc["token_counts"].items()
+                             if name in old["token_counts"]},
+        })
+    return results
+
+
 def extract_pdf(data, max_pages):
     from pypdf import PdfReader
 
@@ -135,7 +173,14 @@ def admitted(doc, raw_hash, text_hash):
 
 def process(doc, workspace, tokenizers):
     raw, cached = get_pdf(doc, workspace)
-    text, metrics = extract_pdf(raw, doc.get("max_pages"))
+    handler = ExtractionWarnings()
+    logger = logging.getLogger("pypdf")
+    logger.addHandler(handler)
+    try:
+        text, metrics = extract_pdf(raw, doc.get("max_pages"))
+    finally:
+        logger.removeHandler(handler)
+    metrics.update(text_quality(text), extraction_warnings=handler.count)
     encoded = text.encode("utf-8")
     raw_hash, text_hash = sha(raw), sha(encoded)
     path = workspace / "processed/sedici" / doc["id"] / (text_hash + ".txt")
@@ -194,7 +239,10 @@ def run_batch(manifest, workspace, tokenizers):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workspace", type=Path, default=ROOT / "workspace")
+    parser.add_argument("--baseline", type=Path, help="Compare document hashes and counts with an earlier evidence JSON")
     args = parser.parse_args()
+    baseline_raw = args.baseline.read_bytes() if args.baseline else None
+    baseline = json.loads(baseline_raw) if baseline_raw is not None else None
     raw = MANIFEST.read_bytes()
     manifest = load_manifest(raw)
     workspace = args.workspace.resolve()
@@ -205,7 +253,7 @@ def main():
     report = {
         "schema_version": 1, "run_id": run_id, "utc": now.isoformat(),
         "git": safe(git_info), "script_sha256": sha(Path(__file__).read_bytes()),
-        "python": sys.version.split()[0], "dependencies": {p: version(p) for p in ("pypdf", "tokenizers")},
+        "python": sys.version.split()[0], "dependencies": {p: version(p) for p in ("pypdf", "tokenizers", "fonttools")},
         "manifest_sha256": sha(raw), "batch_id": manifest["batch_id"],
         "tokenizers": info, "documents": records,
         "summary": {key: sum(r["status"] == key for r in records)
@@ -216,6 +264,12 @@ def main():
                              for name in tokenizers},
         "notes": "Directed sample; not representative. Text extraction and email filtering are not full rights/privacy review. No training or redistribution authorized.",
     }
+    if baseline is not None:
+        report["baseline_comparison"] = {
+            "sha256": sha(baseline_raw),
+            "tokenizers_unchanged": info == baseline.get("tokenizers"),
+            "documents": compare_baseline(records, baseline),
+        }
     data = (json.dumps(report, ensure_ascii=True, indent=2) + "\n").encode("utf-8")
     atomic_write(workspace / "runs" / (run_id + ".json"), data)
     sys.stdout.write(data.decode("ascii"))

@@ -81,3 +81,15 @@ Enviar solo los JSON de las dos corridas y resultados de tests; revisar los text
 ## Resultado local del lote SEDICI 001
 
 [Dos corridas y evidencia comparada](../evidence/sedici-pilot-001-20261119.json), commit 2de2e78 limpio: 8/8 tests, 3 PDF (5.598.056 bytes), 55 de 60 páginas seleccionadas, ninguna página vacía, 144.106 caracteres, 147.362 bytes UTF-8, tres coincidencias de email redactadas. Pleias 42.097 tokens, Apertus 41.355. En los registros de documentos, ambas ejecuciones solo difieren en cached_pdf, de falso a verdadero; hashes, conteos, estados y salida elegible coinciden. Los tres documentos siguen pendientes; corpus elegible vacío. El log contiene 50 advertencias de decodificación CFF Type1 por ausencia de fontTools, no errores de ejecución. No equivale a extracción fiel: próxima prueba, fijar la dependencia fontTools, repetir desde caché, comparar hashes y métricas e inspeccionar textos contra los originales. Preservar esta línea de base y no admitir automáticamente. No se han inspeccionado los PDF/textos locales desde el agente.
+
+## Reextracción y calidad (R16)
+
+Se fija [fonttools 4.66.1](https://pypi.org/project/fonttools/4.66.1/) para decodificación CFF Type1, compatible con Python 3.13 según los requisitos publicados. No se modifica la normalización ni se autoriza admisión. La salida registra versión de fonttools, advertencias pypdf por documento (incluidas otras advertencias), caracteres de reemplazo Unicode, de uso privado y controles inesperados. Estos indicadores son diagnósticos, no una prueba de fidelidad ni de ausencia de datos personales.
+
+```bash
+python -m pip install -r tools/requirements-corpus.txt
+python -m unittest discover -s tests -v
+python -m tools.ingest_sedici --baseline evidence/sedici-pilot-001-20261119.json
+```
+
+Reutilizar el workspace; los textos previos se conservan por hash. Comparar los tres originales, hashes de tokenizadores, hashes de texto, diferencias de caracteres y tokens; comprobar que cached_pdf=true y que no quedan avisos CFF. Revisar localmente el texto completo frente a los originales, en especial acentos, signos, orden de lectura, citas y terceros, y datos personales. No aprobar por ausencia de advertencias. Para cualquier admisión registrar decisión y revisión del texto exacto por hash. No compartir PDFs/textos sin revisión. Pruebas nuevas y ejecución real pendientes.

@@ -5,7 +5,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 from tools.ingest_sedici import (MANIFEST, admitted, get_pdf, load_manifest,
-                                 normalize, run_batch, sha, valid_document)
+                                 normalize, run_batch, sha, valid_document,
+                                 text_quality, compare_baseline)
 
 
 class SediciTests(unittest.TestCase):
@@ -57,6 +58,20 @@ class SediciTests(unittest.TestCase):
                 self.assertEqual(sha(data), digest)
                 self.assertEqual(len(data.splitlines()), 1)
                 self.assertEqual(json.loads(data)["id"], first["id"])
+
+    def test_text_quality(self):
+        self.assertEqual(text_quality("Argentina\n\t\ufffd\ue000\x01"), {
+            "replacement_characters": 1, "private_use_characters": 1,
+            "unexpected_control_characters": 1})
+
+    def test_compare_baseline(self):
+        old = {"id": "test", "raw_sha256": "a", "text_sha256": "b",
+               "characters": 100, "token_counts": {"model": 30}}
+        new = dict(old, text_sha256="c", characters=101, token_counts={"model": 29})
+        self.assertEqual(compare_baseline([new, {"id": "other", "status": "error"}],
+                                          {"documents": [old]}), [{
+            "id": "test", "raw_unchanged": True, "text_unchanged": False,
+            "character_delta": 1, "token_deltas": {"model": -1}}])
 
 
 if __name__ == "__main__":

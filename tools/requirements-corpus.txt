@@ -1,2 +1,3 @@
 -r requirements-feasibility.txt
 pypdf==7.1.1
+fonttools==4.66.1
