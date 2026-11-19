@@ -78,3 +78,7 @@ ID de corrida, Git SHA, hashes, versiones, fuentes/criterios de admisión, confi
 ## Aclaración tras segunda auditoría documental
 
 La selección conserva dos finalistas provisionales. Salamandra 2B y SmolLM3 3B son reservas condicionadas a apertura y presupuesto; no se amplía el número de entrenamientos principales. Ver secuencia de selección en [semillas](base-models.md). La ruta preferida de corpus comienza por metadatos SEDICI/Common Corpus, datos estructurados y originales identificados en LatamGPT; no presupone convenio ni acceso bajo NDA. Ver prueba de factibilidad en [datos](data-sources.md). Requerir inicialmente cobertura de varias familias documentales humanas y separar verbalizaciones/sintéticos; límites propuestos a validar en piloto. Ningún gate de datos, coste o elegibilidad de modelo se considera cerrado por esta revisión.
+
+## Evidencia M00 adicional
+
+[Factibilidad](feasibility.md) registra configuración de finalistas, muestra documental y prueba local acotada propuesta. No cambia la condición de borrador 0.2; el plan 0.3 requiere resultados empíricos y/o revisión crítica explícita de los gates pendientes. No hay autorización de entrenamiento.

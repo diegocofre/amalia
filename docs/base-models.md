@@ -44,3 +44,7 @@ Apertus 1.5B declara destilación desde Apertus-8B-2509 sobre 1,7T tokens de la 
 4. Congelar semilla por revisión/hash y documentar criterio de aprobación de capacidad. No confundir mayor tasa de aciertos con causalidad de adaptación regional.
 
 No se han medido modelos. Las tarjetas y publicaciones no permiten asignar una puntuación empírica.
+
+## Evidencia observada y configuración fija
+
+Ver [prueba de factibilidad](feasibility.md): configs, revisiones candidatas exactas y tamaños anunciados. Apertus presenta discrepancia entre tamaño de parámetros declarado y archivo BF16; no cerrar R02 hasta reconciliar. No se han descargado tokenizadores ni medido fertilidad. Mantener candidato provisoriamente.

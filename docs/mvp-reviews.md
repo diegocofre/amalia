@@ -35,3 +35,9 @@ Cada revisión debe registrar ID, fecha, modelo/versión o investigador, commit 
 - R13 (importante): distinguir fuentes humanas, verbalización determinística y reescritura sintética (también heredada de semilla). Evidencia de cierre: etiquetas de procedencia, límites de mezcla, análisis de cobertura y controles de contaminación. Abierto.
 
 Esta pasada no constituye auditoría exhaustiva ni aprobación de candidato o datos. Próxima evidencia: fichas de genealogía con revisión fija, extracción de catálogo y muestreo de metadatos públicos (sin entrenar). Revisar con modelo de frontera antes de aprobar implementación.
+
+## Tercera pasada: evidencia y límites
+
+- R01/R02: revisiones exactas identificadas y configuración main leída; falta verificación por SHA, genealogía y hashes. Nuevo desajuste Apertus entre tamaño anunciado de tensor y parámetros declarados, mantener abierto.
+- R05: cuatro fichas con CC BY 4.0, dos NC; muestra dirigida, cero admitidos. Consulta OAI inaccesible/HTTP 400, no inferir caída del servicio ni disponibilidad global. Sigue abierto.
+- R14 (importante): la prueba documental no permite medir fertilidad ni volumen. [Prueba acotada](feasibility.md) y script exploratorio propuestos; no ejecutados en el entorno de investigación. Cierre: resultados reales, hashes y muestra aprobada, no meramente existencia del script.

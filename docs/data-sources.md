@@ -67,3 +67,7 @@ Ejemplos de registros SEDICI con CC BY 4.0 y texto completo declarados (no desca
 - Si falta corpus, reducir dosis simétricamente y reformular hipótesis/potencia antes de congelar test; no incorporar NC/ND o derechos desconocidos para completar una cuota.
 
 Objetivo de esta inspección: pasar de listas genéricas a mecanismos concretos de adquisición. El volumen públicamente anunciado no es volumen argentino elegible; no existe todavía un conteo medido.
+
+## Muestra dirigida y accesibilidad
+
+Ver [factibilidad](feasibility.md): seis fichas SEDICI (4 CC BY 4.0, 2 NC), cero documentos admitidos. El muestreo no permite extrapolación; acceso OAI no confirmado. La cosecha real queda como siguiente gate. No hay medición de tokens elegibles.
