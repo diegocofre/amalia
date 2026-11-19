@@ -10,6 +10,8 @@ La exposición adicional a textos culturalmente situados puede modificar asociac
 
 Explorar semiótica y representación, variantes regionales, humor e ironía, conocimiento histórico e institucional, pluralidad, memoria colectiva y efectos de la literatura. El Aleph sirve como analogía conceptual de representación distribuida y expresión sucesiva; no como modelo matemático ni fuente autorizada de entrenamiento.
 
+La implementación propuesta, los formatos de datos, el presupuesto de cómputo y los artefactos reproducibles se describen en el [diseño técnico](technical-design.md).
+
 ## Primer experimento
 
 1. Auditar candidatos [Pleias](https://huggingface.co/PleIAs) 350M/1.2B/3B, Comma y OLMo; verificar corpus heredado, licencias, tokenizer, checkpoints y capacidad en español.

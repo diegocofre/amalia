@@ -8,6 +8,8 @@ Un proyecto abierto, soberano y colectivo de investigación y desarrollo de inte
 >
 > — Jorge Luis Borges, *El Aleph*. [Fuente](https://www.iar.unlp.edu.ar/index.php/2022/06/28/fragmento-de-el-aleph/)
 
+[Visión](#qué-es-amalia) · [Cómo lo vamos a construir](#cómo-empezamos) · [Documentación](#documentación) · [Participá](#participá) · [English](README.en.md)
+
 ## ¿Qué conocimiento le estamos dejando al futuro?
 
 Durante siglos, las sociedades encontraron distintas maneras de preservar y transmitir su conocimiento. La escritura, la imprenta, las bibliotecas, los medios de comunicación e Internet transformaron nuestra relación con la cultura y la memoria colectiva.
@@ -48,6 +50,8 @@ Convocamos a autores, docentes, científicos, estudiantes, programadores, biblio
 
 La construcción de inteligencia artificial también puede ser una tarea colectiva.
 
+Conocé la propuesta de [Amalia Federal](docs/federal.md).
+
 ## Principios
 
 - **Apertura:** código, pesos, datos redistribuibles y metodología públicos y auditables.
@@ -58,9 +62,21 @@ La construcción de inteligencia artificial también puede ser una tarea colecti
 - **Responsabilidad:** respeto por los derechos, privacidad, consentimiento y procedencia.
 - **Continuidad colectiva:** el proyecto debe poder prosperar independientemente de sus impulsores y patrocinadores.
 
+La [gobernanza](GOVERNANCE.md) y la [política de licencias y procedencia](docs/licensing.md) desarrollan estos compromisos.
+
 ## Cómo empezamos
 
 Partiremos de modelos abiertos pequeños, inicialmente candidatos de la familia Pleias, sujetos a auditoría de su formación y licencia. Construiremos un corpus trazable, realizaremos experimentos de entrenamiento continuo con grupos de control y evaluaremos mejoras y regresiones. Después exploraremos modelos conversacionales mayores.
+
+### El camino técnico
+
+1. **Construir el corpus:** identificar fuentes, verificar derechos, digitalizar, normalizar, deduplicar y publicar versiones trazables.
+2. **Partir de un modelo abierto:** seleccionar una semilla pequeña y medir sus capacidades antes de modificarla.
+3. **Continuar el preentrenamiento:** actualizar los pesos con textos argentinos y comparar contra controles equivalentes en español general.
+4. **Evaluar los cambios:** medir comprensión local, lenguaje, conocimiento general y regresiones con datos reservados.
+5. **Desarrollar la capacidad conversacional:** aplicar post-training por separado y liberar una primera versión experimental reproducible.
+
+El [diseño técnico](docs/technical-design.md) explica los componentes, datos, entrenamiento, infraestructura, costes y estrategia de escalamiento. La [agenda científica](docs/research.md) define la hipótesis y los controles; el [roadmap](ROADMAP.md) organiza las etapas y los criterios para avanzar.
 
 La meta inicial es una V1 experimental pública, con pesos, corpus redistribuible, código, evaluación y una primera convocatoria de contribuciones. A largo plazo aspiramos a participar de la investigación de modelos de frontera, con nuevas arquitecturas, colaboración científica y recursos adecuados. No es una promesa de desempeño ni una fecha de entrega.
 
@@ -70,10 +86,13 @@ Buscamos colaboradores y patrocinadores institucionales que quieran acompañar e
 
 El proyecto está en su etapa fundacional: aún no hay modelos entrenados ni corpus publicado. La recepción formal de obras se habilitará cuando estén definidos los procedimientos legales y de privacidad. Mientras tanto, podés proponer fuentes, colaborar en el diseño o participar a través de los [issues](https://github.com/diegocofre/amalia/issues).
 
+Para saber cómo colaborar, consultá la [guía de contribuciones](CONTRIBUTING.md). Las instituciones interesadas pueden conocer nuestra [propuesta de patrocinio](docs/sponsorship.md).
+
 ## Documentación
 
 | Documento | Contenido |
 |---|---|
+| [Diseño técnico](docs/technical-design.md) | Arquitectura, corpus, entrenamiento, infraestructura y escalamiento |
 | [Roadmap](ROADMAP.md) | Etapas, hitos y evolución de modelos |
 | [Agenda científica](docs/research.md) | Hipótesis, controles y evaluación |
 | [Amalia Federal](docs/federal.md) | Participación y recuperación de patrimonio |
@@ -82,6 +101,8 @@ El proyecto está en su etapa fundacional: aún no hay modelos entrenados ni cor
 | [Licencias y procedencia](docs/licensing.md) | Derechos, privacidad y trazabilidad |
 | [Patrocinio institucional](docs/sponsorship.md) | Cooperación y financiamiento |
 | [Créditos](AUTHORS.md) | Reconocimiento de contribuciones |
+| [Licencia Apache-2.0](LICENSE) | Texto legal del software |
+| [Avisos de licencias](NOTICE) | Alcance de las licencias y derechos de terceros |
 
 [Read in English](README.en.md)
 

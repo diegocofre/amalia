@@ -14,4 +14,4 @@ Our principles are openness, sovereignty, cultural diversity, federal participat
 
 We welcome researchers, engineers, authors, educators, cultural institutions, communities and infrastructure or funding partners. No institutional participation is yet confirmed. Please propose ideas and sources through repository issues; do not upload documents without verified permissions or personal information.
 
-See the [Spanish README](README.md), [roadmap](ROADMAP.md), [research agenda](docs/research.md), [licensing policy](docs/licensing.md), [governance](GOVERNANCE.md) and [contribution guide](CONTRIBUTING.md).
+See the [Spanish README](README.md), [roadmap](ROADMAP.md), [research agenda](docs/research.md), [technical design (Spanish)](docs/technical-design.md), [licensing policy](docs/licensing.md), [governance](GOVERNANCE.md) and [contribution guide](CONTRIBUTING.md).

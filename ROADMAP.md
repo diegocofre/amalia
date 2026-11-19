@@ -11,6 +11,8 @@ Horizontes orientativos, sujetos a evidencia, disponibilidad de datos, cómputo 
 | F04 Amalia Federal | Desde la fundación; expansión meses 4–12 | Red de contribuciones, recuperación y digitalización de patrimonio, convenios y financiación |
 | F05 Escalamiento | Largo plazo | Modelos mayores, entrenamiento desde cero y arquitecturas alternativas según capacidad y recursos |
 
+Consultá el [diseño técnico](docs/technical-design.md) y la [agenda científica](docs/research.md) para el detalle operativo y metodológico de estas etapas.
+
 ## Gates
 
 F01: confirmar licencia y procedencia del modelo semilla, inventario elegible, pipeline reproducible, coste medido, conjunto de evaluación separado.
