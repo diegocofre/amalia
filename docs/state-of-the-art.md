@@ -36,3 +36,10 @@ Priorizar SomosNLP, CENIA/LatamGPT, autores de MessIRve, [LIAA UBA/CONICET](http
 No reivindicar primacía argentina ni latinoamericana. Investigar comparativamente el efecto del patrimonio argentino en una semilla auditable, con controles, distribución local y participación federal. Distinguir conocimiento factual, adecuación pragmática, generalización y evidencia sobre representaciones internas. Aprender de antecedentes sin replicar resultados no documentados.
 
 Actualizar este inventario con referencia primaria, fecha, revisión, evidencia y limitaciones. Para recursos operativos ver [fuentes](data-sources.md), [semillas](base-models.md) y [plan del MVP](mvp-plan.md).
+
+## Antecedentes adicionales
+
+- [SmolLM3](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base): modelo multilingüe 3B con checkpoints y fuentes documentadas; referencia para capacidad y reproducibilidad, derechos de datos web pendientes.
+- [Salamandra 2B](https://huggingface.co/BSC-LT/salamandra-2b): mezcla multilingüe con énfasis en lenguas de España y fuentes publicadas; referencia para adaptación y SFT.
+- [LatamGPT catálogo referencial](https://www.latamgpt.org/resources): posible mecanismo de discovery de aportantes por colección; pendiente análisis íntegro.
+- [SEDICI](https://sedici.unlp.edu.ar/): ruta de adquisición por metadatos y derechos por recurso, no licencia indiscriminada.

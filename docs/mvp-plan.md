@@ -74,3 +74,7 @@ Total 111–194 h, horizonte orientativo 4–8 semanas con dedicación suficient
 ## Registro y revisión
 
 ID de corrida, Git SHA, hashes, versiones, fuentes/criterios de admisión, configuración completa, tokenizer/seed, orden de datos, ambiente y hardware, pérdidas, métricas, VRAM, tiempo/coste, checkpoints y desviaciones. Revisiones independientes de investigación, datos, entrenamiento, apertura, producto y red team. [Registro de hallazgos](mvp-reviews.md). Aprobar plan 1.0 antes de implementación; gates experimentales posteriores se resuelven con evidencia, sin consulta al test congelado. La revisión por LLM no sustituye verificación empírica ni asesoramiento especializado.
+
+## Aclaración tras segunda auditoría documental
+
+La selección conserva dos finalistas provisionales. Salamandra 2B y SmolLM3 3B son reservas condicionadas a apertura y presupuesto; no se amplía el número de entrenamientos principales. Ver secuencia de selección en [semillas](base-models.md). La ruta preferida de corpus comienza por metadatos SEDICI/Common Corpus, datos estructurados y originales identificados en LatamGPT; no presupone convenio ni acceso bajo NDA. Ver prueba de factibilidad en [datos](data-sources.md). Requerir inicialmente cobertura de varias familias documentales humanas y separar verbalizaciones/sintéticos; límites propuestos a validar en piloto. Ningún gate de datos, coste o elegibilidad de modelo se considera cerrado por esta revisión.

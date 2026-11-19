@@ -42,3 +42,28 @@ La cifra de 296,5B tokens comunicada por LatamGPT y sus gráficos de país corre
 5. Publicar inventario de aceptados, descartados y pendientes, data card, atribuciones y manifiestos; no publicar datos en cuarentena.
 
 Objetivo 35M tokens regionales únicos, 35M de control y 15M replay compartidos; no es una disponibilidad comprobada. Validar primero 1–2M por brazo y hasta 10M para laboratorio. Si el inventario elegible no alcanza, reducir simétricamente el tamaño y revisar protocolo/potencia, o aplazar; nunca rellenar con datos dudosos. Ver [plan](mvp-plan.md).
+
+## Segunda pasada: rutas de adquisición concretas
+
+| Prioridad | Fuente y acceso | Evidencia / límite |
+|---|---|---|
+| 1 | [SEDICI](https://sedici.unlp.edu.ar/) — [política](https://sedici.unlp.edu.ar/pages/politicas), [OAI-PMH anunciado por SNRD](https://biblioteca.sicyt.gob.ar/recursos/SEDICI) (http://sedici.unlp.edu.ar/xoai/snrd) | Portal informa 191.533 recursos al consultar; no es conteo elegible. Licencia por obra. Consultar Identify/ListMetadataFormats/ListRecords, conservar resumptionToken, filtrar metadatos de derechos y texto completo. No descargar PDFs hasta revisión de derechos. |
+| 2 | [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access/es) — SPARQL y dumps | Datos estructurados CC0; elegir consultas acotadas por propiedad/entidad, no extraer texto de fuentes citadas; registrar QID, propiedades, referencias y revisión. Generar frases mediante plantillas determinísticas marcadas como verbalización de datos, no obra humana. Evitar dominancia y reservar entidades de evaluación. |
+| 3 | [Datos Argentina](https://www.datos.gob.ar/) — CKAN | Catálogo de datos públicos abiertos por temas; revisar licencia y recurso concreto. Priorizar conjuntos textuales y documentación humana frente a verbalización masiva de tablas. |
+| 4 | [Common Corpus](https://huggingface.co/datasets/PleIAs/common_corpus) | Metadatos de idioma, colección, fecha, identificador, licencia, creador y texto; identificador coincide con URL en muchos casos, no todos. No dispone de país confiable declarado; identificar fuente/autor/tema y verificar manualmente. |
+| 5 | [Catálogo LatamGPT](https://www.latamgpt.org/gcs/catalogo-referencial.pdf) y [dashboard](https://www.latamgpt.org/dashboard) | Mapa de fuentes y licencias para localizar originales. Catálogo no inspeccionado íntegramente: consulta web rechazó archivo >10MB; dashboard dinámico no expuso filas. No inferir volúmenes de fuentes. |
+| En cuarentena | [LatamGPT Research](https://huggingface.co/datasets/latam-gpt/LatamGPT-Corpus-1.0-research) | Acceso académico acreditado, NDA y autorización, ~16,2% de volumen completo conforme a ficha; no es requisito ni fuente de cadena pública. |
+| En cuarentena | [UBA Games Corpus](https://ri.conicet.gov.ar/items/238a45c5-ce7c-4ed3-994d-1aff621388e6) | Diálogo espontáneo argentino con anotaciones, CC BY-NC-SA declarada; explorar permiso independiente y consentimiento. |
+| Pendiente | [Corpus de Referencia de la Lengua Española en Argentina](https://www.lllf.uam.es/wordpress/recursos/corpus/) | Más de 2M palabras, sitio dice libre uso; obtener licencia explícita y verificar derechos de textos subyacentes, no admitir por esa etiqueta. |
+
+Ejemplos de registros SEDICI con CC BY 4.0 y texto completo declarados (no descargados ni admitidos): [Los proyectos históricos y los valores, 1960](https://sedici.unlp.edu.ar/handle/10915/133857?show=full), [Compartiendo conocimiento, 2023](https://sedici.unlp.edu.ar/handle/10915/165604?show=full). Verificar titularidad, PDF concreto, terceros y privacidad. El acceso OAI-PMH se ha identificado, no probado mediante cosecha en esta revisión.
+
+### Prueba de factibilidad propuesta (después de aprobar alcance)
+
+- Cosecha de metadatos acotada: hasta 1.000 registros por fuente seleccionada, con muestreo estratificado; candidatos CC0/CC BY primero, licencias ambiguas y NC/ND excluidas hasta decisión. Registrar evidencia, URL, fuente y muestreo. Revisión manual de hasta 50 registros por estrato inicial y test de extracción en subconjunto autorizado.
+- Medir rendimiento por estrato: N registros, fracción con licencia admisible, acceso real, extracción correcta, fracción argentina con evidencia, deduplicación y mediana/media robusta de tokens útiles. Proyectar volumen solo con tamaño del universo conocido y diseño de muestreo; reportar rango/limitaciones, no extrapolar de ejemplos elegidos por búsqueda.
+- Medir cobertura por dominio y región, proporción humana vs verbalizada, tiempo de curaduría y coste. Requerir material de al menos tres familias de fuentes humanas para corpus regional principal; no completar volumen con datos sintéticos. Limitar verbalizaciones a 10% provisional y ninguna fuente dominante por defecto; revisar según evidencia.
+- Orden de decisión: 1–2M tokens auditados por brazo para piloto; hasta 10M para primer laboratorio; 35M+35M+15M como objetivo confirmatorio condicionado a factibilidad. No declarar gate de volumen cerrado sin conteo real con tokenizer de semilla y control comparable.
+- Si falta corpus, reducir dosis simétricamente y reformular hipótesis/potencia antes de congelar test; no incorporar NC/ND o derechos desconocidos para completar una cuota.
+
+Objetivo de esta inspección: pasar de listas genéricas a mecanismos concretos de adquisición. El volumen públicamente anunciado no es volumen argentino elegible; no existe todavía un conteo medido.

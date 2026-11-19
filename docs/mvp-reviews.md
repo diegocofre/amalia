@@ -24,3 +24,14 @@ Entregar el commit exacto del plan, bibliografía, inventario, criterios y regis
 Perfiles: ML Research (causalidad, métricas y potencia), Data (licencias, muestreo y contaminación), Training (arquitectura, memoria, estabilidad y costes), Open Source (genealogía y permisos), Product (utilidad y distribución local), Red Team (contradicciones, fragilidad, afirmaciones injustificadas). No requerir seis modelos distintos: pueden ser revisiones independientes con instrucciones separadas.
 
 Cada revisión debe registrar ID, fecha, modelo/versión o investigador, commit revisado, hallazgo, evidencia, severidad, decisión razonada y verificación. No cerrar hallazgos sin evidencia, no sustituir revisión jurídica ni experimentos. Mantener plan 0.x hasta aprobar; no iniciar entrenamiento principal con gates abiertos.
+
+## Segunda pasada documental
+
+- R01 sigue abierto: la ficha Pleias implica filtros y reescrituras sintéticas y el snapshot actual no acredita el corpus exacto. Revisar texto jurídico y reconstrucción.
+- R02 sigue parcial: identificado objetivo de destilación y maestro; falta auditoría de maestro y runtime.
+- R03 sigue abierto: catálogo LatamGPT disponible, PDF supera límite de consulta y dashboard dinámico no permite comprobar filas. Research tiene NDA y afiliación, excluido de ruta pública. No se aceptaron condiciones en nombre del proyecto.
+- R05 sigue abierto: SEDICI ofrece ruta OAI-PMH y dos ejemplos con licencia explícita; falta muestreo, extracción y conteo. Wikidata y Datos Argentina complementan pero no sustituyen patrimonio humano.
+- R09 sigue abierto: añadidas Salamandra y SmolLM3 como reservas condicionadas; no se han probado ni puntuado.
+- R13 (importante): distinguir fuentes humanas, verbalización determinística y reescritura sintética (también heredada de semilla). Evidencia de cierre: etiquetas de procedencia, límites de mezcla, análisis de cobertura y controles de contaminación. Abierto.
+
+Esta pasada no constituye auditoría exhaustiva ni aprobación de candidato o datos. Próxima evidencia: fichas de genealogía con revisión fija, extracción de catálogo y muestreo de metadatos públicos (sin entrenar). Revisar con modelo de frontera antes de aprobar implementación.
