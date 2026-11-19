@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "batch_id": "sedici-pilot-001",
+  "selection": "Muestra dirigida de tres documentos. No representativa; adquisición local acotada, no autorización de entrenamiento ni publicación.",
+  "documents": [
+    {
+      "id": "sedici-165604",
+      "handle": "10915/165604",
+      "source_url": "https://sedici.unlp.edu.ar/handle/10915/165604",
+      "pdf_url": "https://sedici.unlp.edu.ar/bitstream/handle/10915/165604/Documento_completo.pdf-PDFA.pdf?isAllowed=y&sequence=1",
+      "title": "Compartiendo conocimiento. De los derechos de autor a las licencias Creative Commons",
+      "authors": [
+        "Jorge Julián Cueto",
+        "Miguel Ángel Zubimendi"
+      ],
+      "year": 2023,
+      "domain": "science_open",
+      "language": "es",
+      "country_context": "AR",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "acquisition": "approved_for_local_research",
+      "rights_evidence": "Registro institucional CC BY 4.0 y recurso educativo abierto. Figura de terceros CC BY-SA 4.0: no extraer imágenes; revisar texto, citas y pie de figura antes de admitir.",
+      "review_date": "2026-11-19",
+      "max_pages": null,
+      "training_approval": null,
+      "redistribution_approved": false
+    },
+    {
+      "id": "sedici-162286",
+      "handle": "10915/162286",
+      "source_url": "https://sedici.unlp.edu.ar/handle/10915/162286",
+      "pdf_url": "https://sedici.unlp.edu.ar/bitstream/handle/10915/162286/Documento_completo.pdf-PDFA.pdf?isAllowed=y&sequence=1",
+      "title": "Sarmiento y el Museo de La Plata: arte, técnica y ciudadanía en la representación de la evolución en la Argentina del giro del siglo XIX al XX",
+      "authors": [
+        "Gustavo Gabriel Vallejo"
+      ],
+      "year": 2023,
+      "domain": "history_culture",
+      "language": "es",
+      "country_context": "AR",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "acquisition": "approved_for_local_research",
+      "rights_evidence": "Registro y primera página del artículo con CC BY 4.0. Artículo publicado por CSIC, DOI 10.3989/aeamer.2023.2.05. Excluir anexos ilustrados (páginas PDF 33–37); revisar citas, datos personales y texto antes de admitir.",
+      "review_date": "2026-11-19",
+      "max_pages": 32,
+      "training_approval": null,
+      "redistribution_approved": false
+    },
+    {
+      "id": "sedici-169483",
+      "handle": "10915/169483",
+      "source_url": "https://sedici.unlp.edu.ar/handle/10915/169483",
+      "pdf_url": "https://sedici.unlp.edu.ar/bitstream/handle/10915/169483/Documento_completo.15958.pdf-PDFA.pdf?isAllowed=y&sequence=1",
+      "title": "El deporte en la formación inicial en Educación Física en la Universidad Nacional de La Plata",
+      "authors": [
+        "Iara Buffarini",
+        "Alejo Levoratti"
+      ],
+      "year": 2022,
+      "domain": "education_history",
+      "language": "es",
+      "country_context": "AR",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "acquisition": "approved_for_local_research",
+      "rights_evidence": "Registro y primera página del artículo con CC BY 4.0. DOI 10.21680/2596-0113.2022v5n0ID28961. Revisar citas, datos personales y texto antes de admitir.",
+      "review_date": "2026-11-19",
+      "max_pages": null,
+      "training_approval": null,
+      "redistribution_approved": false
+    }
+  ]
+}

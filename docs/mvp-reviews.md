@@ -57,3 +57,7 @@ Se reducen las instrucciones operativas a un ciclo único; la bibliografía perm
 ## Primera ejecución local M00
 
 3/3 tests válidos; [evidencia](../evidence/M00-feasibility-20261119T031736Z.json). R02: discrepancia de tamaño del archivo resuelta para el SHA inspeccionado (1,510B elementos), queda auditoría de parámetros entrenables, maestro y runtime. R05: acceso SEDICI verificado y 40/200 candidatos declarados; volumen elegible desconocido, abierto. R14: ejecución y hashes acreditados, falta muestra textual aprobada y fertilidad sobre corpus, parcial. R15: pendiente primer lote real. R01, R03 y R09 no se cierran por metadatos. No se cambia semilla ni protocolo confirmatorio.
+
+## Primer lote SEDICI
+
+R15: implementado adaptador local acotado con manifiesto de tres fuentes, caché por ID, extracción por hash, reporte y filtro de admisión por revisión de derechos/privacidad y hashes. Añadidas cinco pruebas unitarias offline. Pendiente prueba local real, repetición, inspección de textos y admisión, snapshot aún no implementado. R05 y R14 siguen abiertos. No se afirma disponibilidad o elegibilidad medida hasta recibir evidencia.

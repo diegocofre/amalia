@@ -79,3 +79,5 @@ Toda fuente investigada se registra en el catálogo versionado; cuando es elegib
 ## Resultado de descubrimiento local
 
 [Corrida M00](../evidence/M00-feasibility-20261119T031736Z.json): endpoint /xoai/snrd operativo, 200 registros consecutivos, 40 candidatos BY/CC0 (20%), 153 NC/ND (76,5%), 7 desconocidos (3,5%). No es una muestra probabilística. 24 handles candidatos conservados en la evidencia; falta identificar obra y derechos aplicables antes de adquirir texto. Common Corpus sin licencia global declarada en la API, LatamGPT gated auto con licencias múltiples, MessIRve CC BY-NC, CHOCLO MIT (solo evaluación), OASST1 y Aya Apache-2.0 declaradas. Revisiones y hashes registrados; ninguna licencia de ficha equivale a admisión.
+
+El [lote SEDICI 001](../configs/sedici-pilot.json) selecciona tres documentos con evidencia revisada de acceso y CC BY 4.0 para adquisición local acotada; ver [procedimiento](feasibility.md#primer-lote-documental-sedici-001). No existe todavía aprobación por hash de los textos extraídos.

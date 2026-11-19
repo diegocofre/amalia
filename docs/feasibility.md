@@ -61,3 +61,19 @@ Además consulta metadatos públicos de seis datasets, intenta rutas alternativa
 ## Primera ejecución local — 2026-11-19
 
 [Evidencia M00](../evidence/M00-feasibility-20261119T031736Z.json): commit bf7e803 limpio, Python 3.13.5, tokenizers 0.22.2; 3/3 tests exitosos. El operador recuperó configs, hashes y encabezados fijados por SHA de ambos modelos. Pleias: 1.195.468.800 elementos BF16, 2.390.937.600 bytes de payload; Apertus: 1.510.019.136 elementos, 3.020.038.272 bytes. Tokenización de cinco frases del script: 78 vs 70 tokens (Apertus 10,26% menos); muestra dirigida, no evidencia de calidad lingüística general. SEDICI /xoai/snrd respondió dos páginas, 200 registros únicos: 40 candidatos BY/CC0, 153 NC/ND, 7 desconocidos. Se conservaron 24 handles candidatos del subconjunto expuesto por el probe; no se admitieron documentos. No extrapolar proporciones. Las seis fichas Hub respondieron, sin descargar datos. El JSON versionado es una extracción del log, no el archivo original intacto (acentos alterados al copiar); no incluye mantenimiento de VM ajeno al proyecto. Próximo paso: lote pequeño de documentos autorizados, revisión de derechos y extracción local. No entrenar todavía.
+
+## Primer lote documental: SEDICI 001
+
+[Manifiesto](../configs/sedici-pilot.json) y [script](../tools/ingest_sedici.py). Tres publicaciones dirigidas, CC BY 4.0 declarada en registros y, en dos artículos, primera página del PDF. Revisión de adquisición local para investigación, no dictamen jurídico ni admisión al entrenamiento. Las figuras de terceros no se extraen; el artículo sobre Sarmiento se limita a sus primeras 32 páginas, sin anexos. Los textos conservan citas y pueden contener datos de contacto u otros contenidos pendientes de revisión; se filtran emails como precaución parcial y se inspecciona el texto antes de admitirlo. No redistribuir originales ni textos por esta prueba.
+
+Desde la raíz, con el venv existente:
+
+```bash
+python -m pip install -r tools/requirements-corpus.txt
+python -m unittest discover -s tests -v
+python -m tools.ingest_sedici
+```
+
+El comando recupera como máximo el lote explícito (tres documentos, 24 MiB por respuesta), descarga tokenizadores fijados si faltan, conserva PDF por ID, extrae texto UTF-8 por hash y produce JSON en consola y `workspace/runs/`. `workspace/raw/sedici/` y `workspace/processed/sedici/` permanecen entre ejecuciones; tras una segunda corrida deben mantenerse hashes y no repetirse descargas. El campo `cached_pdf` permite comprobarlo. El fichero `workspace/corpus/sedici.jsonl` se reconstruye a partir de aprobaciones por hash y permanece vacío hasta revisión. No es un snapshot ni debe usarse si el reporte tiene errores. La segunda corrida vuelve a calcular extracción y métricas con los mismos originales. Sin OCR, no se fuerza la recuperación de escaneos.
+
+Enviar solo los JSON de las dos corridas y resultados de tests; revisar los textos localmente. Aprobar posteriores hashes específicos mediante modificación revisada del manifiesto (reviewer, review_date, rights_and_privacy_notes, raw_sha256, text_sha256, approved=true). Si se necesita excluir citas o corregir extracción, versionar la transformación antes de aprobar. La redistribución continúa separada y desactivada. No se ha ejecutado este nuevo script desde el agente; esperar evidencia real antes de cerrar R15.
