@@ -49,3 +49,7 @@ R14: ampliado script para metadatos Hub, encabezados Safetensors y endpoints alt
 ## Metodología de laboratorio ejecutable
 
 R15 (importante, abierto): el probe actual no produce corpus. Se definió el contrato de adquisición incremental, datos locales, reporte y snapshot, así como metodología cuantitativa/cualitativa y bibliografía. Cierre de implementación: primer adaptador autorizado con lote real local, linaje, reporte, pruebas de idempotencia, reanudación, exclusión y reproducción; no cerrar por existencia de documentación. Se mantiene gate de derechos R05 y ejecución pendiente R14. La decisión tecnológica de orquestación queda condicionada a necesidad medida.
+
+## Síntesis metodológica KISS
+
+Se reducen las instrucciones operativas a un ciclo único; la bibliografía permanece en el estado del arte. Se conserva el criterio de cierre R15 (corpus real local, trazabilidad, reporte, exclusión, reanudación y no duplicación). No se exige CLI, jerarquía de directorios ni orquestador antes de demostrar necesidad. No cambia el protocolo experimental ni el estado de los gates.

@@ -46,4 +46,17 @@ Actualizar este inventario con referencia primaria, fecha, revisión, evidencia 
 
 ## Antecedentes metodológicos transversales
 
-La [metodología de investigación reproducible](research-methodology.md) documenta los referentes de compendios ejecutables (Gentleman y Temple Lang; The Turing Way), workflows científicos (Snakemake, FAIR y DVC), desarrollo de corpus (Common Pile), integración de métodos mixtos (Fetters et al.), documentación lingüística (Bender y Friedman) y error de representación en huellas digitales (Sen et al.). En Amalia confluyen para construir un laboratorio computacional local y una investigación cultural interdisciplinaria. La disponibilidad de infraestructura y datos no demuestra representatividad social ni validez científica.
+La [metodología de investigación](research-methodology.md) sintetiza estos antecedentes. Se adoptan sus principios; no constituyen dependencias obligatorias ni certificaciones de cumplimiento.
+
+| Referencia | Principio incorporado |
+|---|---|
+| Gentleman y Temple Lang, Statistical Analyses and Reproducible Research (2007), recogido en [Research Compendia — The Turing Way](https://book.the-turing-way.org/reproducible-research/compendia/) | Integrar métodos, datos, código y textos en una unidad reproducible y ejecutable. |
+| [The Turing Way](https://www.turing.ac.uk/research/research-projects/turing-way) | Ciencia abierta, diseño de investigación, colaboración y ética. |
+| Mölder et al., [Sustainable data analysis with Snakemake](https://doi.org/10.12688/f1000research.29032.2) (2021) | Flujos explícitos, regenerables, transparentes y adaptables. |
+| [Applying the FAIR Principles to computational workflows](https://doi.org/10.1038/s41597-025-04451-9) (2025) | Diferenciar especificación y ejecución; trazabilidad, metadatos, interoperabilidad, acceso condicionado cuando corresponda. |
+| [DVC pipelines](https://doc.dvc.org/user-guide/pipelines/running-pipelines) | Dependencias, hashes y reconstrucción selectiva de resultados; posible herramienta futura. |
+| Kandpal et al., [The Common Pile v0.1](https://proceedings.neurips.cc/paper_files/paper/2025/hash/52acc050138d6f40dad6f12f91a4ce22-Abstract-Datasets_and_Benchmarks_Track.html) (2025) | Corpus para LLM con código de adquisición/curaduría, mezcla y checkpoints publicados. |
+| Fetters, Curry y Creswell, [Achieving Integration in Mixed Methods Designs](https://doi.org/10.1111/1475-6773.12117) (2013) | Integrar resultados cuantitativos y cualitativos en preguntas, muestreo, colección e interpretación. |
+| Bender y Friedman, [Data Statements for NLP](https://aclanthology.org/Q18-1041/) (2018) | Documentar poblaciones, procedencia, contextos lingüísticos y límites de generalización. |
+| Sen et al., [A Total Error Framework for Digital Traces](https://doi.org/10.1093/poq/nfab018) (2021) | Distinguir errores de representación y medición de fuentes digitales, sin equiparar disponibilidad con representatividad. |
+
